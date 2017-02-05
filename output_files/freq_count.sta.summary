@@ -1,0 +1,173 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 100C Model Setup 'inst2|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -7.322
+TNS   : -62.475
+
+Type  : Slow 1200mV 100C Model Setup 'freq_in'
+Slack : -3.262
+TNS   : -87.912
+
+Type  : Slow 1200mV 100C Model Setup 'clk'
+Slack : -0.484
+TNS   : -0.484
+
+Type  : Slow 1200mV 100C Model Setup 'control_module:inst6|STROBE'
+Slack : -0.206
+TNS   : -0.896
+
+Type  : Slow 1200mV 100C Model Hold 'control_module:inst6|STROBE'
+Slack : 0.229
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Hold 'inst2|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.321
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Hold 'clk'
+Slack : 0.516
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Hold 'freq_in'
+Slack : 0.952
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Recovery 'freq_in'
+Slack : -1.059
+TNS   : -23.465
+
+Type  : Slow 1200mV 100C Model Removal 'freq_in'
+Slack : 0.854
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'freq_in'
+Slack : -3.000
+TNS   : -44.120
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'control_module:inst6|STROBE'
+Slack : -1.285
+TNS   : -41.120
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'inst2|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 7.408
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'clk'
+Slack : 9.729
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Setup 'inst2|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -6.227
+TNS   : -53.539
+
+Type  : Slow 1200mV -40C Model Setup 'freq_in'
+Slack : -2.788
+TNS   : -74.204
+
+Type  : Slow 1200mV -40C Model Setup 'clk'
+Slack : -0.261
+TNS   : -0.261
+
+Type  : Slow 1200mV -40C Model Setup 'control_module:inst6|STROBE'
+Slack : -0.151
+TNS   : -0.457
+
+Type  : Slow 1200mV -40C Model Hold 'control_module:inst6|STROBE'
+Slack : 0.291
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'inst2|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.309
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'clk'
+Slack : 0.561
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'freq_in'
+Slack : 0.832
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Recovery 'freq_in'
+Slack : -0.721
+TNS   : -13.396
+
+Type  : Slow 1200mV -40C Model Removal 'freq_in'
+Slack : 0.661
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'freq_in'
+Slack : -3.000
+TNS   : -44.120
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'control_module:inst6|STROBE'
+Slack : -1.285
+TNS   : -41.120
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'inst2|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 7.397
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'clk'
+Slack : 9.754
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Setup 'inst2|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -3.479
+TNS   : -29.637
+
+Type  : Fast 1200mV -40C Model Setup 'freq_in'
+Slack : -0.980
+TNS   : -23.724
+
+Type  : Fast 1200mV -40C Model Setup 'clk'
+Slack : -0.046
+TNS   : -0.046
+
+Type  : Fast 1200mV -40C Model Setup 'control_module:inst6|STROBE'
+Slack : 0.473
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'control_module:inst6|STROBE'
+Slack : 0.044
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'inst2|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.110
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'clk'
+Slack : 0.116
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'freq_in'
+Slack : 0.414
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Recovery 'freq_in'
+Slack : -0.059
+TNS   : -0.236
+
+Type  : Fast 1200mV -40C Model Removal 'freq_in'
+Slack : 0.421
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'freq_in'
+Slack : -3.000
+TNS   : -38.415
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'control_module:inst6|STROBE'
+Slack : -1.000
+TNS   : -32.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'inst2|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 7.419
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'clk'
+Slack : 9.438
+TNS   : 0.000
+
+------------------------------------------------------------

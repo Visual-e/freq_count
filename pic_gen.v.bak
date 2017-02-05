@@ -1,0 +1,65 @@
+module pic_gen(
+	//vga
+	input [11:0]char_count,
+	input [11:0]line_count,
+	input wire blank,
+	input wire char_clock,
+
+	output reg [3:0]red_out,
+	output reg [3:0]green_out,
+	output reg [3:0]blue_out,
+
+	//built-in memory
+	input [23:0]bmp_data,
+	output reg[13:0]bmp_adress,
+
+	//counter input
+	input [31:0]bcd_cnt
+);
+
+reg [7:0]R;
+reg [7:0]G;
+reg [7:0]B;
+reg [3:0]r_state = state0;
+
+localparam  
+    state0 = 4'b0001,
+    state1 = 4'b0010,
+    state2 = 4'b0011,
+    state3 = 4'b0100,
+    state4 = 4'b0101,
+    state5 = 4'b0110,
+    state6 = 4'b0111,
+    state7 = 4'b1000,
+    state8 = 4'b1001,
+    state9 = 4'b1010;
+
+
+always @(posedge char_clock)
+begin
+
+if(r_state == state0)
+  begin
+  bmp_adress <= char_count;//line_count*1024+char_count+54;
+  r_state <= state1;
+  end
+
+else if(r_state == state1)
+	begin
+	R <= (bmp_data >> 20) & 8'b00001111;
+	G <= (bmp_data >> 12) & 8'b00001111;
+	B <= (bmp_data >> 4) & 8'b00001111;
+	r_state <= state0;
+	end
+end
+
+always @(posedge char_clock) 
+begin
+
+  red_out <= R[7:4];
+  green_out <= G[7:4];
+  blue_out <= B[7:4];
+
+end 
+
+endmodule
